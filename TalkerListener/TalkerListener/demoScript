@@ -1,0 +1,6 @@
+rm talker
+rm listen
+rm *.o
+make -f TLMake
+listen &
+talker 127.0.0.1 "Hello World"
